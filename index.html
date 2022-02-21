@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,13 +21,13 @@
     -->
     <header>
       <img src="img/Logo_name.png" alt="Musee Logo" />
-      <nav>
+      <nav class="navegation">
         <a>Tutorial</a>
         <a>FAQs</a>
         <a>About us</a>
         <a>Open source</a>
       </nav>
-      <button>Sign in</button>
+      <button class="button-sign-in">Sign in</button>
     </header>
     <main>
         <section class="primary">
@@ -39,11 +39,35 @@
 
         <section class="secondary">
           <h3 class="secondary-title">Uses</h3>
-          <ol>
-            <li>Insert a playlist by URL.</li>
-            <li>Link with your account in music apps.</li>
-            <li>Select songs and singres if your like.</li>
-          </ol>
+            <p>Insert a playlist by URL.</p>
+            <div class="card">
+              <h4>Playlist URL</h4>
+              <input type="url" name="URL" class="box">
+              <input type="url" name="URL" class="box">
+              <input type="url" name="URL" class="box">
+              <input type="submit" value="Submit">
+            </div>
+            <p>Link with your account in music apps.</p>
+            <div class="card">
+              <h4>Link your account</h4>
+              <select name="Music APP" id="Selector_app" >
+                <option selected disabled value="">Select</option>
+                <option value="Musee">Musee</option>
+                <option value="Spotify">Spotify</option>
+                <option value="Deezer">Deezer</option>
+                <option value="YouTube Music">YouTube Music</option>
+              </select>
+              
+              <button class="link_app">Link</button>
+              <input type="submit" value="Submit">
+            </div>
+            <p>Select songs and singres if your like.</p>
+            <div class="card">
+              <h4>Select songs and singers if you want</h4>
+              <input type="search" name="singer" class="singer_song">
+              <input type="search" name="song" class="singer_song">
+              <input type="submit" value="Submit">
+            </div>
         </section>
     </main>
     <footer>
