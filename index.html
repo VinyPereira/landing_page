@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A bot to find a song that cobine with you"
-    />
+    <meta name="description" content="A bot to find a song that cobine with you"/>
+    <link rel="stylesheet" href="css/style.css">
     <title>Musee AI - Find your song</title>
   </head>
   <body>
@@ -19,59 +17,61 @@
       #024949
       #8DF2F2
     -->
-    <header>
-      <img src="img/Logo_name.png" alt="Musee Logo" />
-      <nav class="navegation">
-        <a>Tutorial</a>
-        <a>FAQs</a>
-        <a>About us</a>
-        <a>Open source</a>
-      </nav>
-      <button class="button-sign-in">Sign in</button>
-    </header>
-    <main>
-        <section class="primary">
-          <h1 class="primary-title">Musse AI</h1>
-          <h2 class="primary-subtitle"></h2>
-          <button class="primary-button"></button>
-          <img src="img/AI_principal.png" alt="Musee AI">
-        </section >
+    <div class="grid">
+      <header>
+        <img src="img/Logo_name.png" alt="Musee Logo" id="header-logo"/>
+        <nav class="navegation">
+          <a>Tutorial</a>
+          <a>FAQs</a>
+          <a>About us</a>
+          <a>Open source</a>
+        </nav>
+        <button class="button-sign-in">Sign in</button>
+      </header>
+      <main>
+          <section class="primary">
+            <h1 class="primary-title">Musse AI</h1>
+            <h2 class="primary-subtitle"></h2>
+            <button class="primary-button"></button>
+            <img src="img/AI_principal.png" alt="Musee AI">
+          </section >
 
-        <section class="secondary">
-          <h3 class="secondary-title">Uses</h3>
-            <p>Insert a playlist by URL.</p>
-            <div class="card">
-              <h4>Playlist URL</h4>
-              <input type="url" name="URL" class="box">
-              <input type="url" name="URL" class="box">
-              <input type="url" name="URL" class="box">
-              <input type="submit" value="Submit">
-            </div>
-            <p>Link with your account in music apps.</p>
-            <div class="card">
-              <h4>Link your account</h4>
-              <select name="Music APP" id="Selector_app" >
-                <option selected disabled value="">Select</option>
-                <option value="Musee">Musee</option>
-                <option value="Spotify">Spotify</option>
-                <option value="Deezer">Deezer</option>
-                <option value="YouTube Music">YouTube Music</option>
-              </select>
-              
-              <button class="link_app">Link</button>
-              <input type="submit" value="Submit">
-            </div>
-            <p>Select songs and singres if your like.</p>
-            <div class="card">
-              <h4>Select songs and singers if you want</h4>
-              <input type="search" name="singer" class="singer_song">
-              <input type="search" name="song" class="singer_song">
-              <input type="submit" value="Submit">
-            </div>
-        </section>
-    </main>
-    <footer>
-      <img src="img/Logo_name.png" alt="Logo Musse">
-    </footer>
+          <section class="secondary">
+            <h3 class="secondary-title">Uses</h3>
+              <p>Insert a playlist by URL.</p>
+              <div class="card">
+                <h4>Playlist URL</h4>
+                <input type="url" name="URL" class="box">
+                <input type="url" name="URL" class="box">
+                <input type="url" name="URL" class="box">
+                <input type="submit" value="Submit">
+              </div>
+              <p>Link with your account in music apps.</p>
+              <div class="card">
+                <h4>Link your account</h4>
+                <select name="Music APP" id="Selector_app" >
+                  <option selected disabled value="">Select</option>
+                  <option value="Musee">Musee</option>
+                  <option value="Spotify">Spotify</option>
+                  <option value="Deezer">Deezer</option>
+                  <option value="YouTube Music">YouTube Music</option>
+                </select>
+                
+                <button class="link_app">Link</button>
+                <input type="submit" value="Submit">
+              </div>
+              <p>Select songs and singres if your like.</p>
+              <div class="card">
+                <h4>Select songs and singers if you want</h4>
+                <input type="search" name="singer" class="singer_song">
+                <input type="search" name="song" class="singer_song">
+                <input type="submit" value="Submit">
+              </div>
+          </section>
+      </main>
+      <footer>
+        <img src="img/Logo_name.png" alt="Logo Musse" id="footer-logo">
+      </footer>
+    </div>
   </body>
 </html>
