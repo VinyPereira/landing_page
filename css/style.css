@@ -1,155 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mina&display=swap');
 
-* {
+/*  
+font-family: 'Mina', sans-serif;
+font-family: 'Marcellus', serif;
+*/
+
+*{
     margin: 0;
     padding: 0;
+    font-weight: 400;
     text-decoration: none;
 }
 
 body {
     background: linear-gradient(180deg, #049DBF 0.01%, #012E40 99.99%);
-    font-size: 10px;
 }
 
 .grid {
     display: grid;
-    grid-template-rows:auto 90vh auto;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    align-items: center;
-    gap: 100px 0px;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 'header' 'main' 'footer';
+    
+    align-items:center ;
 }
 
 header {
+    padding: 20px 0px 20px 0;
     grid-area: header;
-    display: grid;
-    grid-template: "logo navegation button" auto;
-    justify-content: space-around;
-    align-content:center;
-    padding: 1rem;
-    border-bottom: 0.4px solid #012E40;
-}
-
-#header-logo {
-    height: 3rem;
-}
-
-.navegation {
-    font-family: 'Mina', sans-serif;
-    font-size: 1.5rem;
-    color: #ffffff;
     display: flex;
-    justify-content: space-around;
-    align-items:center;
-    width: 45vw;
-}
-
-a {
-    color: #ffffff;
-}
-
-a:hover {
-    color: #011526;
-}
-
-.button-sign-in {
     font-family: 'Mina', sans-serif;
-    background-color: #012E40;
-    font-size: 1.5rem;
-    color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+header > img {
+    height: 70px;
+}
+
+ul {
+    display:flex;
+    list-style: none;   
+}
+
+li {
+    padding: 10px;
+}
+
+.button {
     border: 0;
     border-radius: 20px;
+    background-color: #012E40;
+    box-shadow:3px 3px 3px #011526;
+    font-family: 'Mina', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
     width: 150px;
     height: 60px;
-    box-shadow: 1.92308px 1.92308px 1.92308px #011526;
+}
+
+a{
+    color: #ffffff;
+}
+a:hover {
+    color: #049DBF;
 }
 
 main {
     grid-area: main;
+    padding: 50px 0 50px 0;
 }
 
-.primary {
+.principal {
     display: grid;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-    grid-template-areas: 
-    'title img'
-    'sub img'
-    'but img';
+    grid-template-areas:'title img' 'sub img' 'but img';
     justify-items: center;
     align-items: center;
+    padding: 0 0 100px 0;
 }
 
-.primary-title {
+.principal > h1 {
     font-family: 'Mina', sans-serif;
-    font-size: 60px;
-    color: #ffffff;
-    font-weight: 400;
     grid-area: title;
+    font-size: 55px;
+    color: white;
 }
 
-.primary-subtitle {
+.principal > h2 {
     font-family: 'Marcellus', serif;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 400;
     grid-area: sub;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 30px 0 10px 0;
 }
 
-.primary-button {
-    height: 70px;
-    width: 150px;
-    border: 0;
-    border-radius: 30px;
-    background-color: #012E40;
-    font-weight: 400;
-    font-family: 'Mina', sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    box-shadow: 3px 3px 3px #011526;
-    grid-area: but;
-}
-
-#primary-img {
-    width: 200px;
+.principal > img {
     grid-area: img;
+    width: 40%;
+}
+
+.princ {
+    font-size: 25px;
+    grid-area: but;
+    width: 180px;
+    height: 60px;
 }
 
 .secondary {
     display: flex;
     flex-direction: column;
-    color: #ffffff;
     align-items: center;
-    font-weight: 400;
+    color: #ffffff;
 }
 
-.secondary-title {
+.secondary > h3 {
+    border-top: 0.4px solid #011526;
+    padding: 40px 0 20px 0;
     font-family: 'Mina', sans-serif;
-    font-size: 50px;
-    padding: 20px;
-    border-top: 0.4px solid #049DBF;
-}
-.secondary-list {
-    font-family: 'Marcellus', serif;
-    font-size: 25px;
-    text-align: center;
-    padding: 40px;  
+    font-size: 30px;
 }
 
-.secondary-list > li {
-    padding: 10px;
+.secondary > ol {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
 }
+
 footer {
     grid-area: footer;
-    padding: 20px;
 }
 
-#footer-logo {
+footer > img {
     display: flex;
+    height: 100px;
     margin: auto;
-    height: 5rem;
 }
-
