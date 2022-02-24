@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mina&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +13,14 @@ body {
 
 .grid {
     display: grid;
-    grid-template-rows:auto 80vh auto;
+    grid-template-rows:auto 90vh auto;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
     "main"
     "footer";
+    align-items: center;
+    gap: 100px 0px;
 }
 
 header {
@@ -26,6 +30,7 @@ header {
     justify-content: space-around;
     align-content:center;
     padding: 1rem;
+    border-bottom: 0.4px solid #012E40;
 }
 
 #header-logo {
@@ -33,6 +38,7 @@ header {
 }
 
 .navegation {
+    font-family: 'Mina', sans-serif;
     font-size: 1.5rem;
     color: #ffffff;
     display: flex;
@@ -41,8 +47,16 @@ header {
     width: 45vw;
 }
 
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #011526;
+}
 
 .button-sign-in {
+    font-family: 'Mina', sans-serif;
     background-color: #012E40;
     font-size: 1.5rem;
     color: white;
@@ -52,12 +66,85 @@ header {
     height: 60px;
     box-shadow: 1.92308px 1.92308px 1.92308px #011526;
 }
+
 main {
     grid-area: main;
 }
 
+.primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    'title img'
+    'sub img'
+    'but img';
+    justify-items: center;
+    align-items: center;
+}
+
+.primary-title {
+    font-family: 'Mina', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 400;
+    grid-area: title;
+}
+
+.primary-subtitle {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    grid-area: sub;
+}
+
+.primary-button {
+    height: 70px;
+    width: 150px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #012E40;
+    font-weight: 400;
+    font-family: 'Mina', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px #011526;
+    grid-area: but;
+}
+
+#primary-img {
+    width: 200px;
+    grid-area: img;
+}
+
+.secondary {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    font-weight: 400;
+}
+
+.secondary-title {
+    font-family: 'Mina', sans-serif;
+    font-size: 50px;
+    padding: 20px;
+    border-top: 0.4px solid #049DBF;
+}
+.secondary-list {
+    font-family: 'Marcellus', serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 40px;  
+}
+
+.secondary-list > li {
+    padding: 10px;
+}
 footer {
     grid-area: footer;
+    padding: 20px;
 }
 
 #footer-logo {
@@ -65,3 +152,4 @@ footer {
     margin: auto;
     height: 5rem;
 }
+
