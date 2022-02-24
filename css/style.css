@@ -57,6 +57,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .head {
@@ -131,6 +132,72 @@ main {
 .secondary > ol {
     font-family: 'Marcellus', serif;
     font-size: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 400px;
+    background-color: #049DBF;
+    margin: 20px;
+    box-shadow: 6px 6px 5px #012E40;
+    border-radius: 20px;
+}
+
+.card-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.cards {
+    display: flex;
+}
+
+.card > h3 {
+    font-family: 'Mina', sans-serif;
+    padding: 20px 10px 0px 10px;
+    font-size: 30px;
+    word-wrap: break-word;
+    text-align: center
+}
+
+.box {
+    margin: auto;
+    display: flex;
+    border: 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.URL {
+    padding: 20px;
+
+}
+
+.card-b {
+    font-size: 25px;
+    width: 120px ;
+    margin: 0 0 10px 0;
+}
+
+#selector {
+    padding: 20px 50px 20px 50px;
+    margin: 20px;
+}
+
+.link {
+    font-size: 15px;
+    padding: 10px 30px 10px 30px;
+    background-color: #011526;
+}
+
+.search {
+    padding: 20px;
 }
 
 footer {
