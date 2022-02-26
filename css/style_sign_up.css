@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mina&display=swap');
+
+/*  
+font-family: 'Mina', sans-serif;
+font-family: 'Marcellus', serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mina', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #012E40;
+}
+
+header {
+    background: linear-gradient(180deg, #049DBF 0.01%, #012E40 99.99%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 45px 0;
+}
+
+header img {
+    height: 60px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a{
+    color: #ffffff;
+    padding: 0 20px;
+    font-size: 20px;
+}
+a:hover {
+    color: #049DBF;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 0px;
+}
+
+.card {
+    margin: auto;
+    width: 500px;
+    height: 780px;
+    background-color: #049DBF;
+    border-radius: 30px;
+    box-shadow: 5px 5px 4px #011526;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.card h1 {
+    font-size: 55px;
+    font-weight: 700;
+    padding: 45px 0 35px 0;
+}
+.card img {
+    padding: 0 20px 25px 20px;
+}
+
+.alternative {
+    font-size: 20px;
+    color: rgba(1, 21, 38, 0.761);
+    position: relative;
+}
+
+.alternative::after, .alternative::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 125px;
+    background-color: #011526;
+    bottom: 50%;
+}
+
+.alternative::after {
+    left: 60px;
+}
+
+.alternative::before {
+    right: 60px;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 20px;
+    padding: 25px 0 15px 10px;
+}
+
+main form input {
+    width: 375px;
+    height: 45px;
+    background-color: #012E40;
+    border: 0;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 0 1.5rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+
+main form input[type="submit"] {
+    font-size: 20px;
+    width: 160px;
+    height: 65px;
+    margin: 70px 0 0px 0;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background-color: #011526;
+}
+
+.sign_in {
+    text-align: center;
+    padding: 50px git0px;
+    
+}
+
+.sign_in span:hover {
+    color: #011526;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+}
+
+footer img {
+    margin: 0 auto;
+    padding: 20px;
+    height: 100px;
+}
